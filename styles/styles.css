@@ -1,0 +1,297 @@
+
+/* IMPORTACION DE FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/sports-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* IMAGENES */
+img{
+    margin: 10px 0;
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* NAVEGACIÓN */
+.navegacion {
+    background-color: rgba(15, 23, 42, 0.95);
+    padding: 15px 30px;
+    border-bottom: 3px solid #00e676;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navegacion nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.navegacion nav ul li a {
+    font-weight: 600;
+    color: #007202;
+}
+.navegacion nav ul li a:hover {
+    color: #00e676;
+}
+
+/* MAIN */
+.main {
+    padding: 30px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* PRODUCTOS */
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+}
+.oferta, .zapatillas, .remeras {
+    background-color: rgba(15, 23, 42, 0.95);
+    border: rgba(255, 255, 255, 0.1) 2px solid;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+/* OFERTA */
+.oferta{
+    border-top:rgb(255, 89, 0) 3px solid;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.oferta h3,
+.oferta > p {
+    grid-column: 1 / -1;
+}
+.oferta h3{
+    font-size: 1.4rem;
+    border-bottom: 2px solid #ff5252;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.oferta > p{
+    color: #ff5252;
+    font-weight: 600;
+}
+
+/* ZAPATILLAS */
+.zapatillas{
+    border-top: 3px solid #00e676;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* REMERAS */
+.remeras{
+    border-top: 3px solid #00e676;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.zapatillas h3,
+.remeras h3{
+    font-size: 1.4rem;
+    border-bottom: 2px solid #00e676;
+    padding-bottom: 5px;
+}
+
+/* CONTENIDO */
+.contenido{
+    background-color: rgba(15, 23, 42, 0.7);
+    border-radius: 8px;
+}
+.zapatillas .contenido,
+.remeras .contenido{
+    width: 60%;
+    border: 2px solid rgba(30, 255, 0, 0.766);
+}
+.zapatillas .contenido p:nth-of-type(2),
+.remeras .contenido p:nth-of-type(2){
+    color: #9aff57;
+}
+.oferta .contenido{
+    border: 2px solid rgb(255, 89, 0);
+}
+.oferta .contenido p:nth-of-type(2){
+    text-decoration: line-through;
+    color: #ff5252;
+}
+.oferta .contenido p:nth-of-type(3){
+    color: #9aff57;
+}
+
+/* CONTACTO */
+.contacto {
+    max-width: 1000px;
+    margin: 20px auto 40px auto;
+    background-color: rgba(15, 23, 42, 0.95);
+    padding: 25px;
+    text-align: center;
+    border: #00e676 3px solid;
+    border-radius: 10px;
+}
+.contacto a{
+    font-weight: 600;
+    color: #007202;
+}
+.contacto a:hover{
+    color: #00e676;
+}
+
+/* FORMULARIO */
+.formulario{
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: rgba(15, 23, 42, 0.95);
+    padding: 30px;
+    border:#00e676 2px solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.formulario label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.formulario input,
+.formulario textarea{
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #475569;
+    background-color: #acb8d6;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease;
+}
+.formulario textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* BOTÓN */
+.boton{
+    width: 50%;
+    padding: 5px;
+    background-color: #00fb21;
+    color: #0f172a;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.boton:hover {
+    background-color: #008200;
+}
+
+/* FOOTER */
+.footer {
+    background-color: rgba(15, 23, 42, 0.95);
+    padding: 15px;
+    border-top: 3px solid #00e676;
+    margin-top: auto;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+
+    /* 1. NAVEGACIÓN: Se apila verticalmente para que el menú no se aplaste */
+    .navegacion {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+    .navegacion nav ul {
+        gap: 15px;
+        padding: 0;
+    }
+
+    /* 2. ESPACIADOS GENERALES */
+    .main {
+        padding: 20px 10px;
+    }
+
+    /* 3. SECCIÓN PRODUCTOS: De 2 columnas pasa a 1 sola */
+    .productos {
+        grid-template-columns: 1fr;
+        padding: 10px 0;
+        gap: 20px;
+    }
+
+    /* Las ofertas pasan de 3 columnas a 1 sola */
+    .oferta {
+        grid-template-columns: 1fr;
+    }
+
+    /* Zapatillas y remeras se acomodan una debajo de la otra en la única columna */
+    .zapatillas,
+    .remeras {
+        grid-column: 1;
+    }
+
+    /* En celulares las tarjetas ya no deben quedar al 60%, ocupan el ancho cómodo */
+    .zapatillas .contenido,
+    .remeras .contenido {
+        width: 100%;
+    }
+
+    /* Las imágenes de los productos se agrandan un poco para apreciarse en celular */
+    img {
+        max-width: 75%;
+    }
+
+    /* Los botones pasan a ser más cómodos para tocar con el dedo */
+    .boton {
+        width: 80%;
+    }
+
+    /* 4. FORMULARIO Y CONTACTO */
+    .contacto {
+        margin: 20px 10px;
+        padding: 20px 15px;
+    }
+    .formulario {
+        width: 100%;
+        margin: 20px auto;
+        padding: 20px 15px;
+    }
+    .formulario .boton {
+        width: 100%;
+    }
+}
